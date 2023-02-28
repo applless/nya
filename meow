@@ -1,13 +1,11 @@
 task.spawn(function()
-    if (not Crasher_Settings.Strength) then 
-       task.wait(8)
-       game.StarterGui:SetCore("SendNotification", {
-           Title = "iku crash",
-           Text = "outdated script lol",
-           Duration = 60,
-       })
-        return 
-    end
+   repeat task.wait(0.1) until game:IsLoaded()
+   task.wait(1)
+   game.StarterGui:SetCore("SendNotification", {
+       Title = "iku crash",
+       Text = "patched",
+       Duration = 999,
+   })
 end)
 
 
